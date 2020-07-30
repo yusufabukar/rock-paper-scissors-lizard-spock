@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<title>RPSLS</title>
+		<link rel='icon' type='image/png' href='favicon.png'>
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'/>
+		<link rel='stylesheet' href='style.css'>
+	</head>
+	<body>
+		<div class='game-container'>
+			<div class='header'>
+				<h1>Rock Paper Scissors Lizard Spock</h1>
+			</div>
+			<div id='player' class='play-container'>
+				<h2>You - <span id='player-score'>0</span><span id='player-choice' class='choice'></span></h2>
+				<i id='player-rock' class='far fa-hand-rock' title='Rock' onclick="select('rock')"></i>
+				<i id='player-paper' class='far fa-hand-paper' title='Paper' onclick="select('paper')"></i>
+				<i id='player-scissors' class='far fa-hand-scissors' title='Scissors' onclick="select('scissors')"></i>
+				<i id='player-lizard' class='far fa-hand-lizard' title='Lizard' onclick="select('lizard')"></i>
+				<i id='player-spock' class='far fa-hand-spock' title='Spock' onclick="select('spock')"></i>
+			</div>
+			<div id='computer' class='play-container'>
+				<h2>Computer - <span id='computer-score'>0</span><span id='computer-choice' class='choice'></span></h2>
+				<i id='computer-rock' class='far fa-hand-rock' title='Rock'></i>
+				<i id='computer-paper' class='far fa-hand-paper' title='Paper'></i>
+				<i id='computer-scissors' class='far fa-hand-scissors' title='Scissors'></i>
+				<i id='computer-lizard' class='far fa-hand-lizard' title='Lizard'></i>
+				<i id='computer-spock' class='far fa-hand-spock' title='Spock'></i>
+			</div>
+			<i class='fas fa-sync-alt reset-icon' title='Reset' onclick='reset()'></i>
+			<div class='result-container'>
+				<h3 id='result-text' class='result-text'></h3>
+			</div>
+		</div>
+		<script src='script.js' type='module'></script>
+	</body>
+</html>
